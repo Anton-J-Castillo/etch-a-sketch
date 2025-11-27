@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketchpad</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sketchpad</h1>
+    </header>
+
+    <main>
+      <div class="buttonsContainer">
+        <div class="buttonContainer">
+          <input id="eraseToggle" type="checkbox" /><label for="erase"
+            >Erase?</label
+          >
+        </div>
+        <div class="buttonContainer">
+          <input
+            id="resolution"
+            type="number"
+            min="2"
+            max="100"
+            placeholder="2-100"
+          /><label for="resolution">Grid Size</label>
+        </div>
+        <div class="buttonContainer">
+          <input id="colorPicker" type="color" /><label for="resolution"
+            >Pen Color</label
+          >
+        </div>
+
+        <div class="buttonContainer">
+          <input id="saveButton" type="button" /><label for="saveButton"
+            >Save Changes</label
+          >
+        </div>
+        <div class="buttonContainer">
+          <input id="clearButton" type="button" /><label for="clearButton"
+            >Clear</label
+          >
+        </div>
+      </div>
+      <div id="sketchGrid"></div>
+
+      <div class="gridInfo">Grid Size: 16x16</div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
